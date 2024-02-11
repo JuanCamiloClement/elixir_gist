@@ -1,0 +1,74 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* This file is for your main application CSS */
+@font-face {
+  font-family: "WorkSans";
+  src: url("/font/WorkSans-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "WorkSans";
+  src: url("/font/WorkSans-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+.em-gradient {
+  background-image: linear-gradient(to bottom, #631A61, #551653, #340E33, #010101);
+  height: 255px;
+}
+
+.dropdown-menu-arrow::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: calc(95% - 12px);
+  border-width: 0 5px 5px 5px;
+  border-style: solid;
+  border-color: transparent transparent white transparent;
+}
+
+.menu-item {
+  @apply block px-4 py-2 text-sm text-white font-brand font-regular
+}
+
+form input[type="text"] {
+  @apply bg-emDark-dark font-brand font-regular text-white text-xs border border-white
+}
+
+.textarea {
+  @apply bg-emDark-dark font-brand font-regular text-white text-xs border border-white h-[300px] resize-none;
+  border-top: none;
+  border-left: none;
+}
+
+.line-numbers {
+  @apply border border-white font-brand font-regular text-xs text-emDark-light bg-emDark-dark h-[300px] w-[54px] text-right overflow-hidden resize-none rounded-bl-md;
+  border-right: none;
+  border-top: none;
+}
+
+.create_button {
+  @apply bg-emPurple border border-white font-brand font-regular text-black text-base
+}
+
+.round-image-padding {
+  border-radius: 50%;
+  border: solid 1.5px white;
+  padding: 4px;
+}
+
+.img-down-arrow::after {
+  content: "";
+  position: absolute;
+  right: -10px;
+  top: 45%;
+  transform: translateY(-50%);
+  border-width: 3px 3px 0 3px;
+  border-color: white transparent transparent transparent;
+  border-style: solid;
+}
